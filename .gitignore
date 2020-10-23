@@ -1,0 +1,12 @@
+
+# node modules
+node_modules
+
+# Log files
+*.log
+
+# VuePress temp directory
+.temp
+
+# Docs dist directory
+/vuepress

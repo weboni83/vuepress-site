@@ -1,0 +1,16 @@
+{
+  "name": "vuepress-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/weboni83/vuepress-site",
+  "author": "weboni83",
+  "license": "MIT",
+  "private": null,
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
