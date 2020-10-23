@@ -62,5 +62,3 @@ show grant 'id'@'%'
 # 접근 권한 제거
 revoke all on nodejs_tasks.* from 'id'@'%';
 ```
-
-$page.lastUpdated

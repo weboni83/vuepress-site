@@ -20,7 +20,7 @@ module.exports = {
   themeConfig: {
     repo: 'https://github.com/weboni83/vuepress-site',
     editLinks: true,
-    docsDir: '',
+    docsDir: 'docs',
     editLinkText: '',
     lastUpdated: 'Last Updated',
     logo : 'coffee_cup_logo.png', // \.vuepress\public\coffee_cup_logo.png
