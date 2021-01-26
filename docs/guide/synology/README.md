@@ -1,0 +1,3 @@
+# Intro
+
+Synolgy NAS

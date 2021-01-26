@@ -27,18 +27,18 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
+        ariaLabel: 'Dev Guide Menu',
         link: '/guide/',
-      },
-      {
-        text: 'Homepage',
-        link: 'https://weboni83.github.io'
+        items: [
+          { text: 'Dev', link: '/guide/dev/' },
+          { text: 'Synology', link: '/guide/synology/' }
+        ]
       }
-      
     ],
     sidebar: {
-      '/guide/': [
+      '/guide/dev/': [
         {
-          title: 'Guide',
+          title: 'Dev',
           collapsable: false,
           children: [
             '',
@@ -47,7 +47,18 @@ module.exports = {
             'create-redmine',
             'create-mssql',
             'create-vue-site',
-            'git-init'
+            'git-init',
+            'create-firebase'
+          ]
+        },
+      ],
+      '/guide/synology/': [
+        {
+          title: 'Synology',
+          collapsable: false,
+          children: [
+            '',
+            'synology',
           ]
         }
       ],
