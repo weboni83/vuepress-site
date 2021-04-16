@@ -31,7 +31,8 @@ module.exports = {
         link: '/guide/',
         items: [
           { text: 'Dev', link: '/guide/dev/' },
-          { text: 'Synology', link: '/guide/synology/' }
+          { text: 'Synology', link: '/guide/synology/' },
+          { text: 'Log', link: '/guide/log/' }
         ]
       }
     ],
@@ -59,6 +60,26 @@ module.exports = {
           children: [
             '',
             'synology',
+          ]
+        }
+      ],
+      '/guide/log/': [
+        {
+          title: 'Log',
+          collapsable: false,
+          children: [
+            '',
+            'install-jekyll',
+          ]
+        }
+      ],
+      '/guide/microservice/': [
+        {
+          title: 'Microservice',
+          collapsable: false,
+          children: [
+            '',
+            'create-dotnet5microservice',
           ]
         }
       ],
