@@ -34,7 +34,7 @@ Vue.prototype.$firebase = firebase
 
 ```
 6. package.json 에 firebase dependencies 가 추가되었는지 확인한다.
-![dependencies](/2020-10-30_192625.png)
+![dependencies](../../.vuepress/public/2020-10-30_192625.png)
 
 ref: [자바스크립트 프로젝트에 Firebase 추가 ](https://firebase.google.com/docs/web/setup?hl=ko#node.js-%EC%95%B1)
 

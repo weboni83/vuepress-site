@@ -33,7 +33,7 @@ module.exports = {
           { text: 'Dev', link: '/guide/dev/' },
           { text: 'Synology', link: '/guide/synology/' },
           { text: 'Log', link: '/guide/log/' },
-          { text: 'microservice', link: '/guide/microservice/' }
+          { text: 'Microservice', link: '/guide/microservice/' }
         ]
       }
     ],
