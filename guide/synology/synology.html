@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Let&#39;s Encrypt SSL 인증서 적용 | Team Ironpot Pilot Site</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/vuepress-site/logo.ico">
+    <meta name="description" content="by VuePress">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/vuepress-site/assets/css/0.styles.3c69fcfa.css" as="style"><link rel="preload" href="/vuepress-site/assets/js/app.483eb9e5.js" as="script"><link rel="preload" href="/vuepress-site/assets/js/2.398af4f6.js" as="script"><link rel="preload" href="/vuepress-site/assets/js/6.d0a8ef1e.js" as="script"><link rel="prefetch" href="/vuepress-site/assets/js/10.d5737ee2.js"><link rel="prefetch" href="/vuepress-site/assets/js/11.1b45b97c.js"><link rel="prefetch" href="/vuepress-site/assets/js/12.8d8d7839.js"><link rel="prefetch" href="/vuepress-site/assets/js/13.ec2c3d89.js"><link rel="prefetch" href="/vuepress-site/assets/js/14.cb0a26fc.js"><link rel="prefetch" href="/vuepress-site/assets/js/15.c76c9024.js"><link rel="prefetch" href="/vuepress-site/assets/js/16.710548c2.js"><link rel="prefetch" href="/vuepress-site/assets/js/17.1da792e5.js"><link rel="prefetch" href="/vuepress-site/assets/js/18.7ab78c63.js"><link rel="prefetch" href="/vuepress-site/assets/js/19.e3524ddc.js"><link rel="prefetch" href="/vuepress-site/assets/js/20.038b2fd6.js"><link rel="prefetch" href="/vuepress-site/assets/js/21.f2556278.js"><link rel="prefetch" href="/vuepress-site/assets/js/22.58e446a3.js"><link rel="prefetch" href="/vuepress-site/assets/js/23.a1ee92bd.js"><link rel="prefetch" href="/vuepress-site/assets/js/24.529a6db4.js"><link rel="prefetch" href="/vuepress-site/assets/js/25.40b5a421.js"><link rel="prefetch" href="/vuepress-site/assets/js/3.7e236c75.js"><link rel="prefetch" href="/vuepress-site/assets/js/4.cb950c0b.js"><link rel="prefetch" href="/vuepress-site/assets/js/5.9499be40.js"><link rel="prefetch" href="/vuepress-site/assets/js/7.35258f39.js"><link rel="prefetch" href="/vuepress-site/assets/js/8.84af4e42.js"><link rel="prefetch" href="/vuepress-site/assets/js/9.4b2804e5.js">
+    <link rel="stylesheet" href="/vuepress-site/assets/css/0.styles.3c69fcfa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-site/" class="home-link router-link-active"><img src="coffee_cup_logo.png" alt="Team Ironpot Pilot Site" class="logo"> <span class="site-name can-hide">Team Ironpot Pilot Site</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Guide Menu" class="dropdown-title"><span class="title">Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Guide Menu" class="mobile-dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/dev/" class="nav-link">
+  Dev
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/synology/" class="nav-link router-link-active">
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/microservice/" class="nav-link">
+  Microservice
+</a></li></ul></div></div> <a href="https://github.com/weboni83/vuepress-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Guide Menu" class="dropdown-title"><span class="title">Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Guide Menu" class="mobile-dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/dev/" class="nav-link">
+  Dev
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/synology/" class="nav-link router-link-active">
+  Synology
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/log/" class="nav-link">
+  Log
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-site/guide/microservice/" class="nav-link">
+  Microservice
+</a></li></ul></div></div> <a href="https://github.com/weboni83/vuepress-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Synology</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-site/guide/synology/" aria-current="page" class="sidebar-link">Intro</a></li><li><a href="/vuepress-site/guide/synology/synology.html" aria-current="page" class="active sidebar-link">Let's Encrypt SSL 인증서 적용</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-site/guide/synology/synology.html#let-s-encrypt-ssl-인증서-적용" class="sidebar-link">Let's Encrypt SSL 인증서 적용</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="let-s-encrypt-ssl-인증서-적용"><a href="#let-s-encrypt-ssl-인증서-적용" class="header-anchor">#</a> Let's Encrypt SSL 인증서 적용</h2> <p>DNS Manual mode 등록하는 순서를 정리합니다.</p> <h3 id="인증서-설치-및-발급"><a href="#인증서-설치-및-발급" class="header-anchor">#</a> 인증서 설치 및 발급</h3> <ol><li>Synology nas에 SSH로 연결합니다.</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ssh</span> user@192.168.0.100 -p <span class="token number">22</span>
+</code></pre></div><ol start="2"><li>acme.sh 설치</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> -i
+<span class="token builtin class-name">cd</span> /var/services/homes/ten/
+<span class="token function">git</span> clone https://github.com/acmesh-official/acme.sh.git
+<span class="token builtin class-name">cd</span> acme.sh
+./acme.sh --install -m  my@example.com --force
+</code></pre></div><ol start="3"><li>인증서 발급</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ~/.acme.sh/acme.sh --issue -d sosoz.me --dns -d *.sosoz.me --force --yes-I-know-dns-manual-mode-enough-go-ahead-please --server letsencrypt
+</code></pre></div><ol start="4"><li><p>도메인서버에 Domain 과 TXT Value 값을 복사하여 DNS 레코드에 TXT 레코드로 추가합니다.</p></li> <li><p>DNS TXT 레코드 변경 후 발급된 TXT Value와 일치하는지 확인합니다. 통상 1~2분이면 확인됩니다.</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">nslookup</span>
+$ <span class="token builtin class-name">set</span> <span class="token assign-left variable">type</span><span class="token operator">=</span>txt
+$ _acme-challenge.sosoz.me
+</code></pre></div><ol start="6"><li>인증서 갱신 명령어를 입력하여 인증서를 발급을 마무리합니다.</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ~/.acme.sh/acme.sh --renew -d sosoz.me --dns -d *.sosoz.me --force --yes-I-know-dns-manual-mode-enough-go-ahead-please --server letsencrypt
+</code></pre></div><p><img src="/vuepress-site/assets/img/2021-01-26_180047.7ebfa6e5.png" alt="dependencies"></p> <blockquote><p><strong>NOTE:</strong> 발급이 완료되면 /root/.acme.sh/[domain]/ 경로 아래에 4개의 파일이 생성됩니다.</p></blockquote> <h3 id="발급된-인증서-synology-nas-인증서로-추가"><a href="#발급된-인증서-synology-nas-인증서로-추가" class="header-anchor">#</a> 발급된 인증서 Synology NAS 인증서로 추가</h3> <ol><li>시놀로지 나스에 SSH로 연결하여 인증서를 다운받기 위해 임시 폴더를 만듭니다.</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> /var/services/homes/user/
+<span class="token function">mkdir</span> cert
+<span class="token builtin class-name">cd</span> cert
+</code></pre></div><ol start="2"><li>관리자로 로그인하고 발급된 인증서를 임시 폴더로 복사합니다.</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> -i
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/sosoz.me.cer <span class="token builtin class-name">.</span>
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/ca.cer <span class="token builtin class-name">.</span>
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/fullchain.cer <span class="token builtin class-name">.</span>
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/sosoz.me.key <span class="token builtin class-name">.</span>
+</code></pre></div><blockquote><p><strong>NOTE:</strong> 파일 탐색기에서는 인증서가 발급된 /root/.acme.sh/[domain] 으로 접근할 수 없으니 인증서를 복사해야 합니다.</p></blockquote> <ol start="3"><li>시놀로지 DSM에 로그인하여 파일 스테이션을 실행합니다.</li> <li>임시폴더에서 복사된 파일을 다운로드 받습니다.</li> <li>다운로드 받은 인증서를 DSM 제어판 - 보안 - 인증서에 추가하고 기본 인증서로 지정합니다.
+<img src="/vuepress-site/assets/img/20210416_getcert.b753e87e.png" alt="dependencies"></li> <li>인증서를 선택하고 <code>구성</code>을 클릭 후 서비스 별 인증서를 모두 기본인증서로 변경합니다.</li></ol> <h3 id="인증서-자동갱신을-위해-스케줄러에-작업-추가"><a href="#인증서-자동갱신을-위해-스케줄러에-작업-추가" class="header-anchor">#</a> 인증서 자동갱신을 위해 스케줄러에 작업 추가</h3> <ol><li>우선, 기본으로 지정한 인증서가 저장되는 경로를 확인합니다.</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">cat</span> /usr/syno/etc/certificate/_archive/DEFAULT
+</code></pre></div><ol start="2"><li>위 명령어 실행후에 반환되는 코드 6자리를 복사합니다.</li> <li>제어판 - 작업 스케줄러를 실행합니다. 생성 - 예약된 작업 - 사용자 정의 스크립트를 추가합니다.
+<blockquote><p><strong>NOTE:</strong> 사용자는 root로 지정해야 합니다.
+<strong>NOTE:</strong> Reverse Proxy 는 자동 적용되지 않아서 개별적으로 적용해야 합니다._</p></blockquote></li> <li>작업 설정탭에 사용자 정의 스크립트에 아래 내용을 복사하고 앞서 확인된 코드 6자리를 복사해서 내용을 수정합니다.</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 인증서 갱신</span>
+/root/.acme.sh/acme.sh --renew -d sosoz.me --dns -d *.sosoz.me --force --yes-I-know-dns-manual-mode-enough-go-ahead-please --server letsencrypt
+
+<span class="token comment"># 인증서 등록</span>
+<span class="token comment"># 복사할 폴더 확인 cat /usr/syno/etc/certificate/_archive/DEFAULT 명령후 출력되는 6자리 코드로 수정합니다.</span>
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/sosoz.me.cer /usr/syno/etc/certificate/_archive/i7b3hd/cert.pem
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/ca.cer /usr/syno/etc/certificate/_archive/i7b3hd/chain.pem
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/fullchain.cer /usr/syno/etc/certificate/_archive/i7b3hd/fullchain.pem
+<span class="token function">cp</span> /root/.acme.sh/sosoz.me/sosoz.me.key /usr/syno/etc/certificate/_archive/i7b3hd/privkey.pem
+
+<span class="token comment"># reverse proxy 에 적용</span>
+<span class="token keyword">for</span> <span class="token for-or-select variable">reverse</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">`</span><span class="token function">ls</span> -l /usr/syno/etc/certificate/ReverseProxy/ <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;^d&quot;</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{ print <span class="token variable">$9</span> }'</span><span class="token variable">`</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">cp</span> -f /root/.acme.sh/sosoz.me/sosoz.me.cer /usr/syno/etc/certificate/ReverseProxy/<span class="token variable">$reverse</span>/cert.pem<span class="token punctuation">;</span> <span class="token function">cp</span> -f /root/.acme.sh/sosoz.me/ca.cer /usr/syno/etc/certificate/ReverseProxy/<span class="token variable">$reverse</span>/chain.pem<span class="token punctuation">;</span> <span class="token function">cp</span> -f /root/.acme.sh/sosoz.me/fullchain.cer /usr/syno/etc/certificate/ReverseProxy/<span class="token variable">$reverse</span>/fullchain.pem<span class="token punctuation">;</span> <span class="token function">cp</span> -f /root/.acme.sh/sosoz.me/sosoz.me.key /usr/syno/etc/certificate/ReverseProxy/<span class="token variable">$reverse</span>/privkey.pem<span class="token punctuation">;</span> <span class="token keyword">done</span>
+
+
+<span class="token comment"># nginx 재시작</span>
+/usr/syno/sbin/synoservicectl --reload nginx
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/weboni83/vuepress-site/edit/master/docs/guide/synology/synology.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/14/2021, 5:26:00 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress-site/guide/synology/" class="prev router-link-active">
+        Intro
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-site/assets/js/app.483eb9e5.js" defer></script><script src="/vuepress-site/assets/js/2.398af4f6.js" defer></script><script src="/vuepress-site/assets/js/6.d0a8ef1e.js" defer></script>
+  </body>
+</html>
